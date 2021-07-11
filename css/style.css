@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: #000
+}
+
+
+.main-game{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    grid-gap: 25px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    grid-area: azul;
+    background-color:rgb(55, 194, 236);
+    border-bottom-right-radius: 100%;
+    border-bottom: 25px solid #FFFFFF;
+    border-right: 25px solid #FFFFFF;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color:rgb(224, 41, 41);
+    border-top-right-radius: 100%;
+    border-top: 25px solid #FFFFFF;
+    border-right: 25px solid #FFFFFF;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color:rgb(255, 208, 0);
+    border-bottom-left-radius: 100%;
+    border-bottom: 25px solid #FFFFFF;
+    border-left: 25px solid #FFFFFF;
+}
+
+.green {
+    grid-area: verde;
+    background-color:rgb(68, 194, 68);
+    border-top-left-radius: 100%;
+    border-top: 25px solid #FFFFFF;
+    border-left: 25px solid #FFFFFF;
+}
+
+.selected {
+    opacity: 0.4;
+}
+
+.score {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    padding: 20px;
+    margin-top: 0;
+    right: 20px;
+    color: #FFFFFF;
+}
+
+.score::before{
+    content: 'Score: ';
+}
